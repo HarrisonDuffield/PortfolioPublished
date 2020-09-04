@@ -91,7 +91,7 @@ function ExapndActiveDiv(HeaderImage,HeaderTitleContent){//clicked on div exapnd
 //comme une parralax?
     ClearMainDiv()
     document.getElementById("BigDiv").style.display="block";
-    //document.getElementById("headerImage").src = HeaderImage;
+    document.getElementById("headerImage").src = HeaderImage;
     document.getElementById("Header").innerHTML = HeaderTitleContent;
     var headerTitle = document.getElementById("HeaderDiv");
     var stickyTitle = headerTitle.offsetTop;

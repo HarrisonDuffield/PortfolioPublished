@@ -23,7 +23,7 @@
         <div class="card cards-linkedin" id="LinkedInDiv" onclick="LinkedInHandler()">
             <a>LinkedIn</a>
         </div>
-        <div class="card" id="CircleDiv" onclick="ExpandCircle()">
+        <div class="card cards-circle" id="CircleDiv" onclick="ExpandCircle()">
             <a>The Circle</a>
         </div>
         <div class="card" id="WebsiteDiv">
@@ -32,23 +32,25 @@
         
     </div>
 
-    <div id="BigDiv">
-        
+    <div id="BigDiv">       
 
-        <img id="headerImage" ></img>
+       
         <div id="HeaderDiv" class = "headerclass">
-            <button class="back" onclick="ActiveDivReset()">Back</button>
+            <button class="back" onclick="ActiveDivReset()">Menu</button>
             <h1 id="Header">Header</h1>
         </div>
-        <div class="TopperClass">
-            <div id="TextContentBox">
-                <div id ="TextContent">            
+        <div id="ContentBoxes" class ="ContentCards">
+            <div class="TopperClass">
+                <div id="MediaContentBox">
+                    <img id="headerImage" ></img>
                 </div>
             </div>
-        </div>
-        <div class="TopperClass">
-            <div id="MediaContentBox">
-                <p>Lorem Ipsum</p>
+
+            <div class="TopperClass">
+                <div id="TextContentBox">
+                    <div id ="TextContent">            
+                    </div>
+                </div>
             </div>
         </div>
     </div>
