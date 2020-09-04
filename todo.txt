@@ -1,3 +1,10 @@
+Done :
+
+Back Button
+
+
+
+
 Image disapper on scroll down
 Python Json Proccessing -- Cors will stop this, but ill put the methods in to do it
 JSON Handelling
@@ -10,14 +17,11 @@ Disclaimer about main site being under construction
 
 If possible , python file as a tkinter utility
 
-Back Button 
-
-
 Grid for chrome (IE should be fine but needs checking,) - FF works fine obvs
 
 Maybe a startup animation
 
-CSS rules for the Buttons
+CSS rules for the Buttons(Mostly)
 
 
 Method to embed the github repostiory / acitivty logs / lagnuage thing, maybe?
@@ -45,3 +49,11 @@ github page calls api ,has stuff like total commits - follower count , as a slid
 
 
 Instead of a sticky header - how about the header only reappears when on scroll. Maybe both, so its only like that on Mobile, where as upon PC it stays fixed
+
+
+
+Image sizing
+
+Hamburger Back button 
+
+Smooth Scroling

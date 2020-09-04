@@ -9,7 +9,13 @@
 
 </head>
 <body>
+    <div id="ExitCross" onclick="ExitHomeMenu()" style="padding:10px 16px">
+        <div class="bar1 bar1-cross"></div>
+        <div class="bar2 bar2-cross"></div>
+    </div>
+
     <div class="cards">
+        <div class="card" id = "WelcomeDiv"><a id="WelcomeText"></a></div>
         <div class="card" id = "AboutDiv"><a>About</a></div>
         <div class="card cards-spotify" id="SpotifyDiv" onclick="ExpandSpotify()">
             <a>Spotify Group Bangers</a>
@@ -36,10 +42,15 @@
 
        
         <div id="HeaderDiv" class = "headerclass">
-            <button class="back" onclick="ActiveDivReset()">Menu</button>
+            <div id="BackButtonContainer" onclick="ActiveDivReset()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+
+            </div>
             <h1 id="Header">Header</h1>
         </div>
-        <div id="ContentBoxes" class ="ContentCards">
+        <div id="ContentBoxes" class ="ContentCards" >
             <div class="TopperClass">
                 <div id="MediaContentBox">
                     <img id="headerImage" ></img>
