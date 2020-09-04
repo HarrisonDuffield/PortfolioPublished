@@ -1,0 +1,47 @@
+Image disapper on scroll down
+Python Json Proccessing -- Cors will stop this, but ill put the methods in to do it
+JSON Handelling
+Image Stuff
+Fancy JS Effects if not mobile
+
+Social Buttons
+Disclaimer about main site being under construction
+
+
+If possible , python file as a tkinter utility
+
+Back Button 
+
+
+Grid for chrome (IE should be fine but needs checking,) - FF works fine obvs
+
+Maybe a startup animation
+
+CSS rules for the Buttons
+
+
+Method to embed the github repostiory / acitivty logs / lagnuage thing, maybe?
+
+
+
+the picutre becomes the header when scrolled small
+
+
+have the cards on the card page bigger, certainly on mobile , but less so 
+
+
+deepl translation of pages, click button to reuturn back to english - translation defaults to local area lagnuage , based off ip/location
+
+
+
+scroll down , header moves into centre of bar , back button shows
+
+
+animated github tiles - like the windows start menu but done myself, automatic on mobile
+
+
+github page calls api ,has stuff like total commits - follower count , as a slide that it revolves through - on PC only - on mobile it will just be a link to the profile
+
+
+
+Instead of a sticky header - how about the header only reappears when on scroll. Maybe both, so its only like that on Mobile, where as upon PC it stays fixed

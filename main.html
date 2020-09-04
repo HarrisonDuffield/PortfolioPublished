@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500&display=swap" rel="stylesheet"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+</head>
+<body>
+    <div class="cards">
+        <div class="card" id = "AboutDiv"><a>About</a></div>
+        <div class="card cards-spotify" id="SpotifyDiv" onclick="ExpandSpotify()">
+            <a>Spotify Group Bangers</a>
+        </div>
+        <div class="card" id="PagodaDiv" onclick="ExpandPagoda()">
+            <a>The Pagoda</a>
+        </div>
+        <div class="card" id="GithubDiv">
+            <a>Github</a>
+        </div>
+        <div class="card cards-linkedin" id="LinkedInDiv" onclick="LinkedInHandler()">
+            <a>LinkedIn</a>
+        </div>
+        <div class="card" id="CircleDiv" onclick="ExpandCircle()">
+            <a>The Circle</a>
+        </div>
+        <div class="card" id="WebsiteDiv">
+            <a id="CurrentWebAddress">harrisonduffield.com</a>
+        </div>
+        
+    </div>
+
+    <div id="BigDiv">
+        
+
+        <img id="headerImage" ></img>
+        <div id="HeaderDiv" class = "headerclass">
+            <button class="back" onclick="ActiveDivReset()">Back</button>
+            <h1 id="Header">Header</h1>
+        </div>
+        <div class="TopperClass">
+            <div id="TextContentBox">
+                <div id ="TextContent">            
+                </div>
+            </div>
+        </div>
+        <div class="TopperClass">
+            <div id="MediaContentBox">
+                <p>Lorem Ipsum</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
