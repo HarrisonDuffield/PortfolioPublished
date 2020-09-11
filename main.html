@@ -2,10 +2,14 @@
 <html lang="en"> 
 <html>
 <head>
+    
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8"/>
     <link rel="stylesheet" type="text/css" href="main.css">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500&display=swap" rel="stylesheet"> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 
 </head>
 <body>
@@ -15,7 +19,13 @@
     </div>
 
     <div class="cards">
-        <div class="card" id = "WelcomeDiv"><a id="WelcomeText"></a></div>
+        <div class="card" id = "WelcomeDiv"><a id="WelcomeText">Hello! Have a browse of everything I have been up to</a></div>
+        <div class="card" id = "NameDiv">
+            <a id="NameText"> Harrison Duffield</a>
+            <br>
+            <a id="SubheadingText"></a>
+        </div>
+        
         <div class="card" id = "AboutDiv"><a>About</a></div>
         <div class="card cards-spotify" id="SpotifyDiv" onclick="ExpandSpotify()">
             <a>Spotify Group Bangers</a>
@@ -23,33 +33,35 @@
         <div class="card" id="PagodaDiv" onclick="ExpandPagoda()">
             <a>The Pagoda</a>
         </div>
-        <div class="card" id="GithubDiv">
-            <a>Github</a>
+        <div class="card cards-github" id="GithubDiv">
+            <a href="https://github.com/HarrisonDuffield">Github</a>
         </div>
         <div class="card cards-linkedin" id="LinkedInDiv" onclick="LinkedInHandler()">
             <a>LinkedIn</a>
         </div>
         <div class="card cards-circle" id="CircleDiv" onclick="ExpandCircle()">
             <a>The Circle</a>
+            
+
         </div>
-        <div class="card" id="WebsiteDiv">
+        <div class="card" id="WebsiteDiv" onclick="PortfolioHandler()">
             <a id="CurrentWebAddress">harrisonduffield.com</a>
         </div>
         
     </div>
-
+    <a id="JSWarningMessage">Hello! It seems you likely have JavaScript disabled, please enable it for the optimum experience</a>
     <div id="BigDiv">       
 
        
-        <div id="HeaderDiv" class = "headerclass">
-            <div id="BackButtonContainer" onclick="ActiveDivReset()">
+        <header id="HeaderDiv" class = "headerclass">
+            <div id="BackButtonContainer" onclick="ActiveDivReset()" style="padding-left: 1.5vw;">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
                 <div class="bar3"></div>
 
             </div>
             <h1 id="Header">Header</h1>
-        </div>
+        </header>
         <div id="ContentBoxes" class ="ContentCards" >
             <div class="TopperClass">
                 <div id="MediaContentBox">
