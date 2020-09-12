@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8"/>
     <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="gradient.css">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500&display=swap" rel="stylesheet"> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
@@ -20,22 +21,20 @@
 
     <div class="cards">
         <div class="card" id = "WelcomeDiv"><a id="WelcomeText">Hello! Have a browse of everything I have been up to</a></div>
-        <div class="card" id = "NameDiv">
-            <a id="NameText"> Harrison Duffield</a>
-            <br>
-            <a id="SubheadingText"></a>
-        </div>
         
-        <div class="card" id = "AboutDiv"><a>About</a></div>
+        
+        <div class="card cards-other" id = "OtherWorkDiv"onclick="ExpandOtherWork()" hidden><a>Other Work</a></div>
+        <div class="card cards-other" id = "Monocl" onclick="ExpandMonocl()"><a>Monocl</a></div>
         <div class="card cards-spotify" id="SpotifyDiv" onclick="ExpandSpotify()">
-            <a>Spotify Group Bangers</a>
+            <a>Spotify Group Playlist Utility</a>
         </div>
         <div class="card" id="PagodaDiv" onclick="ExpandPagoda()">
             <a>The Pagoda</a>
         </div>
         <div class="card cards-github" id="GithubDiv">
-            <a href="https://github.com/HarrisonDuffield">Github</a>
+            <a >Github</a>
         </div>
+
         <div class="card cards-linkedin" id="LinkedInDiv" onclick="LinkedInHandler()">
             <a>LinkedIn</a>
         </div>
@@ -44,8 +43,13 @@
             
 
         </div>
-        <div class="card" id="WebsiteDiv" onclick="PortfolioHandler()">
+        <div class="card cards-other" id="WebsiteDiv" onclick="PortfolioHandler()">
             <a id="CurrentWebAddress">harrisonduffield.com</a>
+        </div>
+        <div class="card" id = "NameDiv">
+            <a id="NameText"> Harrison Duffield</a>
+            <br>
+            <a id="SubheadingText"></a>
         </div>
         
     </div>
@@ -66,6 +70,8 @@
             <div class="TopperClass">
                 <div id="MediaContentBox">
                     <img id="headerImage" ></img>
+                    <vid id="headerVideo" style="display: none;"> </vid>
+                    <div id="AlternateTextContent" style="display: none;"></div>
                 </div>
             </div>
 
