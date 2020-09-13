@@ -194,7 +194,8 @@ function PortfolioHandler(){
 }
 
 function GithubHandler(){
-    window.location.href("https://github.com/HarrisonDuffield")
+    window.location.replace("https://github.com/HarrisonDuffield")
+    
 
 }
 
