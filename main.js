@@ -4,7 +4,7 @@ console.log("This site was written rather quickly over the summer of 2020. My ma
 document.getElementById("JSWarningMessage").style.display = "none";
 document.getElementById("CurrentWebAddress").innerHTML = window.location.hostname;
 document.getElementById("BigDiv").style.display="none";
-//document.getElementById("ExitCross").style="background-color:blue";
+document.getElementById("ExitCross").style.display="none";
 
 var WhatIsLeftBox = "Media" // tracks the boxes
 
@@ -195,7 +195,7 @@ function PortfolioHandler(){
 
 function GithubHandler(){
     window.location.replace("https://github.com/HarrisonDuffield")
-    
+
 
 }
 
