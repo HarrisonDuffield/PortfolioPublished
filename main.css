@@ -33,6 +33,9 @@ video{
 
   
 }
+.cards a{
+  color:white;
+}
 #BigDiv{
   justify-content: center;
 }
@@ -71,7 +74,7 @@ box-shadow: 0px 5px 10px 3px rgba(0,0,0,0.32);
 }
 .headerclass{
   padding: 5px 0px;
-  background: #555;
+  background: var(--headerColor);
   color: #f1f1f1;
   overflow: hidden;
   order: 4;
@@ -89,7 +92,10 @@ box-shadow: 0px 5px 10px 3px rgba(0,0,0,0.32);
   font-size: 1.2em;
   color: white;
   font-weight:500;
-  background-color:var(--buttonColour);
+  background: var(--buttonColour);  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right,var(--buttonColour),var(--chinese-red),var(--seal-brown));  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right,var(--buttonColour),var(--chinese-red),var(--seal-brown)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
   width: 100%;
   /*position: relative;*/
   border-radius: 55px;
@@ -102,12 +108,18 @@ box-shadow: 0px 5px 10px 3px rgba(0,0,0,0.32);
   box-shadow: 0px 5px 10px 3px rgba(0,0,0,0.32);
   border: none;
 }
+.ButtonLink:hover{
+  background-image: linear-gradient(to right bottom, #eac10b, #eaa111, #e3811f, #d6632b, #c44734, #bc4135, #b43b36, #ac3537, #b14134, #b64c32, #ba5830, #bd632f);
+  filter: brightness(100%);
+}
 .card {
   background-color:var(--LimitedImportance);
   color: white;
   padding: 1rem;
   height: 4rem;
   margin:0.5rem;
+  background: rgb(10,153,50);
+  background: linear-gradient(75deg, rgba(10,153,50,1) 35%, rgba(25,240,86,1) 100%); 
 }
 .sticky {
   position: fixed;
@@ -127,6 +139,7 @@ box-shadow: 0px 5px 10px 3px rgba(0,0,0,0.32);
   grid-gap: 1rem;
   order: 5;
   
+  
 }
 
 .ContentCards {
@@ -145,40 +158,48 @@ box-shadow: 0px 5px 10px 3px rgba(0,0,0,0.32);
 }
 .cards-lesserImportance:hover{
   cursor: pointer;
+  filter: brightness(108%);
 }
 .cards-spotify:hover{
-      color: red;
+      color: gray;
       background-image: url("Assets/Spotify/SpotifyFrontPage.png");
       background-position:top;
       cursor: pointer;
+      filter: brightness(108%);
 }
 
 
 .cards-linkedin:hover{
-  background-image: url("file:///C:/Users/hpd12/OneDrive/others/Documents/GitHub/Portfolio/Assets/SpotifyFrontPage.png");
-  background-position: center;
+  
   cursor: pointer;
+  filter: brightness(108%);
   
 }
 .cards-circle{
-  background-color: var(--Circle);
+  /* background-color: var(--Circle); */
+  background: rgb(10,153,50);
+  background: linear-gradient(36deg, rgba(10,153,50,1) 35%, rgba(25,240,86,1) 79%); 
 }
 .cards-circle:hover{
-  background-image: url("Assets/Circle/CircleHover.ico");
+  /* background-image: url("Assets/Circle/CircleHover.ico");
   background-repeat:no-repeat;
-  background-position: center;
-  
+  background-position: center; */
   cursor: pointer;
+  filter: brightness(108%);
 }
-.cards-github:hover{
+.cards-github{
   
   background-image: url("https://avatars1.githubusercontent.com/u/46687573?s=460&u=85245301c86579b24eaadc5c553fd169716f36f4&v=4");
   background-repeat:no-repeat;
-  background-position: center;
+  background-position: center;}
+.cards-github:hover{
   cursor: pointer;
+  filter: brightness(120%);
 }
 .cards-other:hover{
   cursor: pointer;
+  filter: brightness(128%);
+  
 }
 .bar1,.bar2,.bar3{
   width: 35px;
