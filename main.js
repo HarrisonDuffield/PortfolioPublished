@@ -5,7 +5,7 @@ document.getElementById("JSWarningMessage").style.display = "none";
 document.getElementById("CurrentWebAddress").innerHTML = window.location.hostname;
 document.getElementById("BigDiv").style.display="none";
 document.getElementById("ExitCross").style.display="none";
-
+AddToHistory("Harrison Duffield","")
 var WhatIsLeftBox = "Media" // tracks the boxes
 
 
@@ -227,6 +227,9 @@ function CurrentlyActivePageSwitch(){
         case "OtherWork":
             ExpandOtherWork();
             break;
+        case "Monocl":
+            ExpandMonocl();
+            break;
         case "Pagoda":
             ExpandPagoda();
             break;
@@ -236,7 +239,7 @@ function CurrentlyActivePageSwitch(){
         case "About":
             PortfolioHandler();
         default:
-            ExpandSpotify();
+            ActiveDivReset();
             break;
     }
 }
@@ -364,6 +367,7 @@ function ClearMainDiv(){
     document.getElementById("Header").innerHTML = "";
     document.getElementById("headerImage").src = "";
     document.getElementById("headerVideo").src="";
+    
 }
 
 
