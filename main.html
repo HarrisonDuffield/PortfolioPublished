@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500&display=swap" rel="stylesheet"> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    
 
 </head>
 <body>
@@ -20,15 +21,15 @@
     </div>
 
     <div class="cards">
-        <div class="card" id = "WelcomeDiv"><a id="WelcomeText">Hello! Have a browse of everything I have been up to</a></div>
+        <div class="card" id = "WelcomeDiv" ><a id="WelcomeText">Hello! Have a browse of everything I have been up to</a></div>
         
         
-        <div class="card cards-other" id = "OtherWorkDiv"onclick="ExpandOtherWork()" hidden><a>Other Work</a></div>
-        <div class="card cards-other" id = "Monocl" onclick="ExpandMonocl()"><a>Monocl</a></div>
-        <div class="card cards-spotify" id="SpotifyDiv" onclick="ExpandSpotify()">
+        <div class="card cards-other" id = "OtherWorkDiv"onclick="ExpandOtherWork()"><a>Other Work</a></div>
+        <div class="card cards-lesserImportance" id = "Monocl" onclick="ExpandMonocl()" href="content/Monocl"><a>Monocl</a></div>
+        <div class="card cards-spotify" id="SpotifyDiv" onclick="ExpandSpotify()" href="content/Spotify">
             <a>Spotify Group Playlist Utility</a>
         </div>
-        <div class="card" id="PagodaDiv" onclick="ExpandPagoda()">
+        <div class="card cards-lesserImportance" id="PagodaDiv" onclick="ExpandPagoda()">
             <a>The Pagoda</a>
         </div>
         <div class="card cards-github" id="GithubDiv">
@@ -38,12 +39,13 @@
         <div class="card cards-linkedin" id="LinkedInDiv" onclick="LinkedInHandler()">
             <a>LinkedIn</a>
         </div>
+        
         <div class="card cards-circle" id="CircleDiv" onclick="ExpandCircle()">
             <a>The Circle</a>
             
 
         </div>
-        <div class="card cards-other" id="WebsiteDiv" onclick="PortfolioHandler()">
+        <div class="card cards-other " id="WebsiteDiv" onclick="PortfolioHandler()">
             <a id="CurrentWebAddress">harrisonduffield.com</a>
         </div>
         <div class="card" id = "NameDiv">
