@@ -2,10 +2,8 @@ console.log("This site serves a temporary portfolio. Yes, it has been hastily pu
 var CurrentlyActivePage = "About"
 console.log("This site was written rather quickly over the summer of 2020. My main site is under delicate construction, this merely servers as a stopgap.")
 document.getElementById("JSWarningMessage").style.display = "none";
-document.getElementById("CurrentWebAddress").innerHTML = window.location.hostname;
-document.getElementById("BigDiv").style.display="none";
-document.getElementById("ExitCross").style.display="none";
-AddToHistory("Harrison Duffield","")
+
+
 var WhatIsLeftBox = "Media" // tracks the boxes
 
 
@@ -14,18 +12,10 @@ function scrollFunction() {
  
 }
 
-var cards = $(".card");
-console.log(cards.length)
-WelcomeText();
-var WelcomeTracker = 0;
-for(var i = 0; i <= cards.length; i++){
-    var target = Math.floor(Math.random() * cards.length -1) + 1;
-    var target2 = Math.floor(Math.random() * cards.length -1) +1;
-    cards.eq(target).before(cards.eq(target2));
-}
+
 
 WindowReloader();
-
+function HideDivs(){}
 function WindowReloader(){
     var PreviousVisit = window.location.href;
     if(PreviousVisit.indexOf("#")>=0){
@@ -64,31 +54,17 @@ function AddToWelcomeText(CharToAdd,counter){
 
 
 function AddToHistory(Title,PageToAdd){ // as essentially a one page JS i need this for UX when people use the back button
-    history.pushState(null,Title,PageToAdd);
+    //history.pushState(null,Title,PageToAdd);
 }
 
-window.onpopstate = function(event){
-    console.log(event)
-}
+
 
 
 
 function WelcomeText(){
     return;
 }
-function HideDivs(ElementToSave){//hide the non active div
-    for(var i = 0; i < cards.length; i++){
-        if(cards[i].id === ElementToSave){
-            cards[i].style.display = "none";
-            //continue;
-        }
-        else{
-             cards[i].style.display = "none";
-        }
-}
-}
 
-window.onbeforeunload = function(){ ActiveDivReset();};
 
 
 
@@ -201,8 +177,9 @@ function GithubHandler(){
 
 
 function ActiveDivReset(){
+    window.location.href='index.html';
     ClearMainDiv();
-    document.getElementById("ExitCross").style.display="block";
+    //document.getElementById("ExitCross").style.display="block";
     document.getElementById("BigDiv").style.display="none";
     for(var i = 0; i < cards.length; i++){
                  cards[i].style.display = "block";
