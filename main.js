@@ -98,7 +98,7 @@ function ExpandOtherWork(){
     CurrentlyActivePage = "OtherWork"
     var LinksToWork = ["https://livecoventryac-my.sharepoint.com/:w:/g/personal/duffiel5_uni_coventry_ac_uk/ETZxLo6sOVBDqBqpeYJWO1QBFxpJwB-d0abrvQMmmPHbQw?e=fgBMSh"]
     var DisplayName = ["Internet of Things 4007CEM - 02/2020"]
-    var TextParagraphs = ["Here is a small but hopefully growing showvase of other bits of work I've completed recently : "]
+    var TextParagraphs = ["Here is a small but hopefully growing showcase of other bits of work I've completed recently : "]
     NonStandardExpandActiveDiv("Other Work");
     for (var i=0;i<TextParagraphs.length;i++){
         LeftAddContentText(TextParagraphs[i]);
