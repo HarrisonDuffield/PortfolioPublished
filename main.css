@@ -1,4 +1,5 @@
 @import url("colours.css");
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
 @-ms-viewport{
   width: device-width;
 }
@@ -101,8 +102,7 @@ box-shadow: 0px 5px 10px 3px rgba(0,0,0,0.32);
   background: -webkit-linear-gradient(to right,var(--buttonColour),var(--chinese-red),var(--seal-brown));  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right,var(--buttonColour),var(--chinese-red),var(--seal-brown)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   overflow: hidden;
-  width: 100%;
-  /*position: relative;*/
+  width: 100%; /*position: relative;*/
   border-radius: 55px;
   overflow:hidden;
   justify-content: center;
@@ -130,6 +130,12 @@ box-shadow: 0px 5px 10px 3px rgba(0,0,0,0.32);
   box-shadow: 0px 5px 10px 3px rgba(0,0,0,0.32);
   filter: blur(125%);
   border-radius: 5px;
+}
+.subHeader{
+  font-family:'Ubuntu', sans-serif;
+  font-style: normal;
+  font-size: 1em;
+  font-weight: normal;
 }
 .sticky {
   position: fixed;
@@ -183,9 +189,9 @@ box-shadow: 0px 5px 10px 3px rgba(0,0,0,0.32);
   margin-top:1vh
 }
 .cards-linkedin{
-  background: rgb(10,153,50);
+  background-color: honeydew;
   background-size:contain;
-  background-image: url("LinkedIn.png"),linear-gradient(150deg, rgba(10,153,50,1) 35%, rgba(25,240,86,1) 100%);
+  background-image: url("LinkedIn.png"),linear-gradient(150deg,honeydew, honeydew 100%);
   background-repeat:no-repeat;
   background-position: center;
 }
@@ -248,18 +254,22 @@ box-shadow: 0px 5px 10px 3px rgba(0,0,0,0.32);
 
 
 
-  /* Screen larger than 600px? 2 column */
   @media (min-width: 600px) {
     .cards { grid-template-columns: repeat(2, 1fr); }
     .CardLimiter{margin-top: 10vh;}
   }
   
-  /* Screen larger than 900px? 3 columns */
+  
   @media (min-width: 900px) {
     .cards { grid-template-columns: repeat(3, 1fr); max-width: 80vw;margin-right: 7.5;margin-left: 7.5;}
     .ContentCards{grid-template-columns: repeat(2, 1fr);
       max-width: 800vw;}
     .CardLimiter{margin-top: 10vh;}
+    .TopperClass {
+      margin-left: 10vh;
+      max-width: 600px;
+      align-self: center;
+    }}
 
   }
 
@@ -267,15 +277,17 @@ box-shadow: 0px 5px 10px 3px rgba(0,0,0,0.32);
   @media (min-width: 600px) {
     @supports(-ms-ime-align: auto){
          .cards { grid-template-columns: repeat(2, 1fr); }
+         .CardLimiter{margin-top: 10vh;}
     }
   }
   
-  /* Screen larger than 900px? 3 columns */
+
   @media (min-width: 900px) {
     @supports(-ms-ime-align: auto){
       .cards { grid-template-columns: repeat(3, 1fr); }
       .ContentCards{grid-template-columns: repeat(1, 1fr);
       max-width: 800vw;}
+      .CardLimiter{margin-top: 10vh;}
  }
   }
 

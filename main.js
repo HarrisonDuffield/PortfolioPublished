@@ -132,13 +132,14 @@ function ExpandCircle(){//original plan was to have this all generate dynamicall
     AddToHistory("Circle","#Circle")
     CurrentlyActivePage = "Circle"
     HideDivs();
-    var TextParagraphs = ["It may seem long ago now, but at the start of the pandemic the UK(and elsewhere) was in the midst of a panic buying problem,culminating in toilet roll becoming scarce. To combat this , and to maintain social distancing the major UK supermarkets devised a system where people would have to queue 2m apart around their car parks. We didn't think this was an adequate enough solution,in particular with the stories of the queuing system not really being flexible around timings,so we devised a queue booking system for supermarkets. This would also have had the benefit of tracking the people who were present at any time in the shop, to easily trace contacts in case of infection","The Circle is a project created for the HackQuarantine with Daniel Perks","Please contact me to view the private repostiory"]
+    var TextParagraphs = ["It may seem long ago now, but at the start of the pandemic the UK(and elsewhere) was in the midst of a panic buying problem,culminating in toilet roll becoming scarce. To combat this , and to maintain social distancing the major UK supermarkets devised a system where people would have to queue 2m apart around their car parks. We didn't think this was an adequate enough solution,in particular with the stories of the queuing system not really being flexible around timings,so we devised a queue booking system for supermarkets. This would also have had the benefit of tracking the people who were present at any time in the shop, to easily trace contacts in case of infection","The Circle is a project created for the HackQuarantine with Daniel Perks"]
     HeaderImage = 'http://img.youtube.com/vi/dUIdQCkoBqY/hqdefault.jpg'
     ExapndActiveDiv(HeaderImage,"The Circle");
     for (var i=0;i<TextParagraphs.length;i++){
         AddContentText(TextParagraphs[i]);
     } 
     AddButtonLink("http://thecircle.digital","Take a look")
+    AddButtonLink("https://github.com/danperks/theCircle","View Repository")
     AddButtonLink("https://www.youtube.com/watch?v=dUIdQCkoBqY&feature=youtu.be","Watch the Demonstration")
 }
 
