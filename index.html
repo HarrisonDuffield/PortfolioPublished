@@ -8,27 +8,41 @@
     <meta name="description" content="Harrison Duffield - Portfolio - UK">
     <meta charset="utf-8"/>
     <link rel="stylesheet" type="text/css" href="main.css">
-    <link rel="stylesheet" type="text/css" href="gradient.css">
+    <link rel="stylesheet" type="text/css" href="colours.css">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500&display=swap" rel="stylesheet"> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     
 
 </head>
+<header id="HeaderDiv" class = "headerclass">
+    <div id="BackButtonContainer" onclick="ActiveDivReset()" style="padding-left: 1.5vw;padding-top: 1.5vw;">
+        
+
+    </div>
+    <h1 id="Header">Harrison Duffield</h1>
+    <h3 id="Sub Text">Computer Science | Coventry, United Kingdom | Est. 2001</h3>
+</header>      
 <body>
+    
     <div id="ExitCross" onclick="ExitHomeMenu()" style="padding:10px 16px">
         <div class="bar1 bar1-cross"></div>
         <div class="bar2 bar2-cross"></div>
     </div>
-
+    <div class="CardLimiter">
     <div class="cards">
         <div class="card" id = "WelcomeDiv" ><a id="WelcomeText">Hello! Have a browse of everything I have been up to</a></div>
         
         
-        <div class="card cards-other" id = "OtherWorkDiv"onclick="window.location.href='Content.html#OtherWork'; "><a>Other Work</a></div>
+        
         <div class="card cards-lesserImportance" id = "Monocl" onclick="window.location.href='Content.html#Monocl'; " href="content/Monocl"><a>Monocl</a></div>
         <div class="card cards-spotify" id="SpotifyDiv" onclick="window.location.href='Content.html#Spotify'; " href="content/Spotify">
             <a>Spotify Group Playlist Utility</a>
+        </div>
+        <div class="card cards-circle" id="CircleDiv" onclick="window.location.href='Content.html#Circle'; ">
+            <a>The Circle</a>
+            
+
         </div>
         <div class="card cards-lesserImportance" id="PagodaDiv" onclick="window.location.href='Content.html#Pagoda'; ">
             <a>The Pagoda</a>
@@ -36,39 +50,30 @@
         <div class="card cards-github" id="GithubDiv" onclick="GithubHandler()">
             <a >Github</a>
         </div>
-
+        <div class="card cards-other" id = "OtherWorkDiv"onclick="window.location.href='Content.html#OtherWork'; "><a>Other Work</a></div>
         <div class="card cards-linkedin" id="LinkedInDiv" onclick="LinkedInHandler()">
             <a>LinkedIn</a>
-        </div>
-        
-        <div class="card cards-circle" id="CircleDiv" onclick="window.location.href='Content.html#Circle'; ">
-            <a>The Circle</a>
-            
-
-        </div>
+        </div>       
         <div class="card cards-other " id="WebsiteDiv" onclick="window.location.href='Content.html#Portfolio'; ">
             <a id="CurrentWebAddress">harrisonduffield.com</a>
+            <a >/About</a>
         </div>
-        <div class="card" id = "NameDiv">
+        <!-- <div class="card" id = "NameDiv">
             <a id="NameText"> Harrison Duffield</a>
             <br>
             <a id="SubheadingText"></a>
-        </div>
+        </div> -->
         
     </div>
+    </div>
+    <noscript>
+        <p>Hi. I am 19 years old and studying towards a BSc in Computer Science at Coventry University in the United Kingdom.</p><p>Welcome to my current 'portfolio'. It contains the highlights of recent projects I have worked on , aswell as some of the larger pieces of work undertaken as part of my studies.</p><p>My main portfolio is under careful construction, however I intend to make regular improvements to this site just to keep it up to date and fresh.</p><p>Keep your eye out, and take a look around</p><p>Like what you see? Say hello.</p><p>This site was last updated in September 2020</p>
+    </noscript>
     <a id="JSWarningMessage">Hello! It seems you likely have JavaScript disabled, please enable it for the optimum experience</a>
-    <div id="BigDiv">       
+    
 
+       <div id="BigDiv">
        
-        <header id="HeaderDiv" class = "headerclass">
-            <div id="BackButtonContainer" onclick="ActiveDivReset()" style="padding-left: 1.5vw;">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-
-            </div>
-            <h1 id="Header">Header</h1>
-        </header>
         <div id="ContentBoxes" class ="ContentCards" >
             <div class="TopperClass">
                 <div id="MediaContentBox">
@@ -86,6 +91,8 @@
             </div>
         </div>
     </div>
+    
 </body>
 <script src="main.js"></script>
 <script src="HomePage.js"></script>
+

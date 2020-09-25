@@ -1,8 +1,7 @@
 document.getElementById("CurrentWebAddress").innerHTML = window.location.hostname;
 document.getElementById("BigDiv").style.display="none";
 document.getElementById("ExitCross").style.display="none";
-AddToHistory("Harrison Duffield","")
-
+AddToHistory("Harrison Duffield","");
 var cards = $(".card");
 console.log(cards.length)
 WelcomeText();
@@ -10,7 +9,7 @@ var WelcomeTracker = 0;
 for(var i = 0; i <= cards.length; i++){
     var target = Math.floor(Math.random() * cards.length -1) + 1;
     var target2 = Math.floor(Math.random() * cards.length -1) +1;
-    cards.eq(target).before(cards.eq(target2));
+    //cards.eq(target).before(cards.eq(target2));
 }
 
 

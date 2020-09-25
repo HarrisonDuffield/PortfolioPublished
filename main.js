@@ -232,7 +232,6 @@ function LeftRightSwitch(){
 }
 
 function ExapndActiveDiv(HeaderImage,HeaderTitleContent){//clicked on div exapnds to full screen,picutre tops the article and dispaperas as scroll down, h1 header - back button to main page
-//comme une parralax?
     ClearMainDiv();
     document.getElementById("ExitCross").style.display="none";
     document.getElementById("BigDiv").style.display="block";
