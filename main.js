@@ -155,7 +155,7 @@ function PortfolioHandler(){
     HeaderImage = "https://avatars1.githubusercontent.com/u/46687573?s=460&u=85245301c86579b24eaadc5c553fd169716f36f4&v=4"
     ExapndActiveDiv(HeaderImage,"About")
     var LastUpdated = "This site was last updated in September 2020";
-    var TextParagraphs = ["Hi. I am 19 years old and studying towards a BSc in Computer Science at Coventry University in the United Kingdom." ,"Welcome to my current 'portfolio'. It contains the highlights of recent projects I have worked on , aswell as some of the larger pieces of work undertaken as part of my studies.","My main portfolio is under careful construction, however I intend to make regular improvements to this site just to keep it up to date and fresh.","Keep your eye out, and take a look around","Like what you see? Say hello.",LastUpdated]
+    var TextParagraphs = ["Hi. I am 19 years old and studying towards a BSc in Computer Science at Coventry University in the United Kingdom." ,"Welcome to my current 'portfolio'. It contains the highlights of recent projects I have worked on , aswell as some of the larger pieces of work undertaken as part of my studies.","Please forgive the poor stylistic choices, My main portfolio is under careful construction, however I intend to make regular improvements to this site just to keep it up to date and fresh.","Keep your eye out, and take a look around","Say hello.",LastUpdated]
     for (var i=0;i<TextParagraphs.length;i++){
         AddContentText(TextParagraphs[i]);
     } 
