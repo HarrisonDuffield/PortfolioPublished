@@ -178,7 +178,7 @@ function GithubHandler(){
 
 
 function ActiveDivReset(){
-    window.location.href='index.html';
+    window.location.href='harrisonduffield.com';
     ClearMainDiv();
     //document.getElementById("ExitCross").style.display="block";
     document.getElementById("BigDiv").style.display="none";
