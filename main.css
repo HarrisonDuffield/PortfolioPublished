@@ -4,13 +4,15 @@
   width: device-width;
 }
 html {
-   font-size: 18px;
+   font-size: 1em;
   font-family: 'Baloo Tamma 2', cursive;
 }
 body {
    padding-bottom: 1vh;
    margin: 0;
    background:var(--backgroundColour);
+   background: rgb(213,202,189);
+background: linear-gradient(90deg, rgba(213,202,189,1) 49%, rgba(25,240,86,1) 49%); 
 }
 img{
   min-width: 100%;
