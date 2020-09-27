@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<html>
+<head>
+    
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 , user-scalable=false">
+    <meta name="description" content="Harrison Duffield - Portfolio - UK">
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="colours.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500&display=swap" rel="stylesheet"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    
+
+</head>
+<body>
+    <div id="ExitCross" onclick="ExitHomeMenu()" style="padding: 10px 16px; display: none;">
+        <div class="bar1 bar1-cross"></div>
+        <div class="bar2 bar2-cross"></div>
+    </div>
+
+    
+    <a id="JSWarningMessage" style="display: none;">Hello! It seems you likely have JavaScript disabled, please enable it for the optimum experience</a>
+    <div id="BigDiv" style="display: block;">       
+
+       
+        <header id="HeaderDiv" class="headerclass sticky">
+            <div id="BackButtonContainer" onclick="ActiveDivReset()" style="padding-left: 1.5vw;">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+
+            </div>
+            <h1 id="Header">The Pagoda</h1>
+            <h3>Harrison Duffield</h3>
+            
+        </header>
+        <div id="ContentBoxes" class="ContentCards">
+                <div class="TopperClass">
+                    <div id="MediaContentBox">
+                        <img id="headerImage" src="Assets\Pagoda\PagodaStockImage.jpg">
+                    </div>
+                </div>
+            
+            <div class="TopperClass ">
+                <div id="TextContentBox">
+                    <div id="TextContent">
+                        <p>The Pagoda is a network based text game undertaken as part of 4007CEM. Sort of meant to be along the lines of a text based version of the now popular "Among Us".My contributions to this were written entirely in C++, however some of the project also involves some SQL and HTML/JS(these parts are not functional unfortunately) The main components of the game worked enough that my individual contributions to the project recived a mark of circa 80%</p>
+                        <p>The remaining part is largely window-dressing</p>
+                        <p>Unfortunately a working demonstraion is unavailable as the pre-requisite databases have been pulled,aswell as the window dressign code causing some remaining issues.</p>
+                        <button class="ButtonLink">See the Repository</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+<script src="main.js"></script>
+</body>

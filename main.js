@@ -85,19 +85,6 @@ function ExpandOtherWork(){
     
 }
 
-function ExpandSpotify(){//original plan was to have this all generate dynamically from json files, but CORS requests will stop that when hosting on github pages
-    AddToHistory("Spotify","#Spotify")
-    HideDivs();
-    CurrentlyActivePage = "Spotify"
-    var TextParagraphs = ["My Spotify playist utility named 'Spotify Group Bangers' is a system devised by msyelf with assistance from Daniel Perks , to curate spotify playlists together as a group. It is hosted on free tier heroku(so load times do slow down frequently), and is built on a flask backend."]
-    HeaderImage = 'Assets\\Spotify\\SpotifyDemo.png';
-    ExapndActiveDiv(HeaderImage,"Spotify Group Bangers");
-    for (var i=0;i<TextParagraphs.length;i++){
-        AddContentText(TextParagraphs[i]);
-    } 
-    AddButtonLink("http://spotify.harrisonduffield.com","Give It A Go");
-    AddButtonLink("https://github.com/HarrisonDuffield/SpotifyGroupPlaylist","View the Repository");
-}
 
 
 function ExpandMonocl(){
@@ -114,19 +101,7 @@ function ExpandMonocl(){
     AddButtonLink("https://github.com/HarrisonDuffield/MonoclBackend/blob/master/README.md","Documentation")
 }
 
-function ExpandPagoda(){
-    AddToHistory("Pagoda","#Pagoda")
-    CurrentlyActivePage = "Pagoda"
-    HideDivs();
-    var TextParagraphs = ["The Pagoda is a network based text game undertaken as part of 4007CEM. My contributions to this were written entirely in C++, however some of the project also involves some SQL and HTML/JS(these parts are not functional unfortunately) The main components of the game worked enough that my individual contributions to the project recived a mark of circa 80%","The remaining part is largely window-dressing","Unfortunately a wroking demonstraion is unavailable as the pre-requisite databases have been pulled,aswell as the window dressign code causing some remaining issues."]
-    HeaderImage = 'Assets\\Pagoda\\PagodaStockImage.jpg';
-    ExapndActiveDiv(HeaderImage,"The Pagoda");
-    for (var i=0;i<TextParagraphs.length;i++){
-        AddContentText(TextParagraphs[i]);
-    }
-    AddButtonLink("https://github.com/danperks/The-Pagoda","See the Repository") 
 
-}
 
 function ExpandCircle(){//original plan was to have this all generate dynamically from json files, but CORS requests will stop that when hosting on github pages
     AddToHistory("Circle","#Circle")
