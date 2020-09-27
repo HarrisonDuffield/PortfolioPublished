@@ -181,7 +181,7 @@ header h3{
 }
 
 .sticky+.ContentCards{
-  padding-top: 30vh;
+  padding-top: 25vh;
   padding-bottom: 30vh;
 }
 
@@ -311,7 +311,10 @@ header h3{
   @media (min-width: 600px) {
     .cards { grid-template-columns: repeat(2, 1fr); }
     .CardLimiter{margin-top: 10vh;}
-    
+    .sticky+.ContentCards{
+      padding-top: 18.5vh;
+      padding-bottom: 30vh;
+    }
   }
   
   
@@ -329,6 +332,11 @@ header h3{
       background: linear-gradient(90deg, rgba(213,202,189,1) 50%,var(--backgroundColour) 50%);
     
     }
+    .sticky+.ContentCards{
+      padding-top: 13.5vh;
+      padding-bottom: 30vh;
+    }
+    
 
   }
 
@@ -352,6 +360,11 @@ header h3{
         background: linear-gradient(90deg, rgba(213,202,189,1) 50%,var(--backgroundColour) 50%);
       
       }
+      .sticky+.ContentCards{
+        padding-top: 15vh;
+        padding-bottom: 30vh;
+      }
+    
  }
   }
 
