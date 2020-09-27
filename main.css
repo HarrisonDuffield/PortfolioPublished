@@ -8,18 +8,30 @@ html {
   font-family: 'Baloo Tamma 2', cursive;
 }
 body {
+  height: 100vh;
    padding-bottom: 1vh;
    margin: 0;
    background:var(--backgroundColour);
-   background: rgb(213,202,189);
-background: linear-gradient(90deg, rgba(213,202,189,1) 49%, rgba(25,240,86,1) 49%); 
+   
+  
 }
 img{
   min-width: 100%;
   max-width: 100%;
   height: auto;
 }
-
+footer{
+  padding: 5vh;
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  color: white;
+}
+iframe .video{
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+}
 video{
   min-width: 100%;
   max-width: 100%;
@@ -125,6 +137,7 @@ box-shadow: 0px 5px 10px 3px rgba(0,0,0,0.32);
 .ButtonLink:hover{
   background-image: linear-gradient(to right bottom, #eac10b, #eaa111, #e3811f, #d6632b, #c44734, #bc4135, #b43b36, #ac3537, #b14134, #b64c32, #ba5830, #bd632f);
   filter: brightness(100%);
+  font-size: 1.4em;
 }
 .card {
   background-color:var(--LimitedImportance);
@@ -132,8 +145,8 @@ box-shadow: 0px 5px 10px 3px rgba(0,0,0,0.32);
   padding: 1rem;
   height: 4rem;
   margin:0.5rem;
-  background: rgb(10,153,50);
-  background: linear-gradient(150deg, rgba(10,153,50,1) 35%, rgba(25,240,86,1) 100%); 
+  background:#e21e2b;
+   background: linear-gradient(150deg, #e21e2b 35%, #f26e6b 100%);  
   -webkit-box-shadow: 0px 5px 10px 3px rgba(0,0,0,0.32);
   -moz-box-shadow: 0px 5px 10px 3px rgba(0,0,0,0.32);
   box-shadow: 0px 5px 10px 3px rgba(0,0,0,0.32);
@@ -160,10 +173,12 @@ box-shadow: 0px 5px 10px 3px rgba(0,0,0,0.32);
   display: grid;
   grid-gap: 1rem;
   order: 5;
+  font-size: 1.2em;
   
   
   
 }
+
 
 .ContentCards {
   max-width: 400vw;
@@ -182,6 +197,7 @@ box-shadow: 0px 5px 10px 3px rgba(0,0,0,0.32);
 .cards-lesserImportance:hover{
   cursor: pointer;
   filter: brightness(108%);
+  font-size: 1.4em;
 }
 .cards-spotify:hover{
       color: gray;
@@ -189,28 +205,29 @@ box-shadow: 0px 5px 10px 3px rgba(0,0,0,0.32);
       background-position:top;
       cursor: pointer;
       filter: brightness(108%);
+      font-size: 1.4em;
 }
 
 .CardLimiter{
   margin-top:1vh
 }
 .cards-linkedin{
-  background-color: honeydew;
+  background-color: #e21e2b;
   background-size:contain;
-  background-image: url("LinkedIn.png"),linear-gradient(150deg,honeydew, honeydew 100%);
+  background-image: url("LinkedIn.png");
   background-repeat:no-repeat;
-  background-position: center;
+  background-position: right;
 }
 .cards-linkedin:hover{
-  
+  font-size: 1.4em;
   cursor: pointer;
   filter: brightness(108%);
   
 }
 .cards-circle{
-  /* background-color: var(--Circle); */
+  /*  background-color: var(--Circle); 
   background: rgb(10,153,50);
-  background: linear-gradient(36deg, rgba(10,153,50,1) 35%, rgba(25,240,86,1) 79%); 
+  background: linear-gradient(36deg, rgba(10,153,50,1) 35%, rgba(25,240,86,1) 79%);  */
 }
 .cards-circle:hover{
   /* background-image: url("Assets/Circle/CircleHover.ico");
@@ -220,11 +237,12 @@ box-shadow: 0px 5px 10px 3px rgba(0,0,0,0.32);
   filter: brightness(108%);
 }
 .cards-github{
-  background: rgb(10,153,50);
+  
   background-size:contain;
-  background-image: url("github.png"),linear-gradient(150deg, rgba(10,153,50,1) 35%, rgba(25,240,86,1) 100%);
+  background-image: url("github.png"),linear-gradient(150deg, #e21e2b 35%, #f26e6b 100%); 
   background-repeat:no-repeat;
   background-position: center;
+  
   }
 .cards-github:hover{
   cursor: pointer;
@@ -233,6 +251,7 @@ box-shadow: 0px 5px 10px 3px rgba(0,0,0,0.32);
 .cards-other:hover{
   cursor: pointer;
   filter: brightness(128%);
+  
   
 }
 .bar1,.bar2,.bar3{
