@@ -15,6 +15,13 @@ body {
    
   
 }
+
+body.inProject{
+  
+
+}
+
+
 img{
   min-width: 100%;
   max-width: 100%;
@@ -26,6 +33,7 @@ footer{
   align-items: center; 
   justify-content: center; 
   color: white;
+  margin-bottom: 3vh;
 }
 iframe .video{
   min-width: 100%;
@@ -189,6 +197,10 @@ box-shadow: 0px 5px 10px 3px rgba(0,0,0,0.32);
 
 
 .cards-spotify{
+  background-size:contain;
+  background-image: url("Assets/Spotify/SpotifyHomeIcon.png"),linear-gradient(150deg, #e21e2b 35%, #f26e6b 100%); 
+  background-repeat:no-repeat;
+  background-position: right;
   background-color: var(--Spotify);
 }
 .cards-lesserImportance{
@@ -200,9 +212,9 @@ box-shadow: 0px 5px 10px 3px rgba(0,0,0,0.32);
   font-size: 1.4em;
 }
 .cards-spotify:hover{
-      color: gray;
+     /*  color: gray;
       background-image: url("Assets/Spotify/SpotifyFrontPage.png");
-      background-position:top;
+      background-position:top; */
       cursor: pointer;
       filter: brightness(108%);
       font-size: 1.4em;
@@ -228,6 +240,10 @@ box-shadow: 0px 5px 10px 3px rgba(0,0,0,0.32);
   /*  background-color: var(--Circle); 
   background: rgb(10,153,50);
   background: linear-gradient(36deg, rgba(10,153,50,1) 35%, rgba(25,240,86,1) 79%);  */
+  background-size:contain;
+  background-image: url("Assets/Circle/CircleHover.ico"),linear-gradient(150deg, #e21e2b 35%, #f26e6b 100%); 
+  background-repeat:no-repeat;
+  background-position: right;
 }
 .cards-circle:hover{
   /* background-image: url("Assets/Circle/CircleHover.ico");
@@ -235,22 +251,25 @@ box-shadow: 0px 5px 10px 3px rgba(0,0,0,0.32);
   background-position: center; */
   cursor: pointer;
   filter: brightness(108%);
+  font-size: 1.4em;
 }
 .cards-github{
   
   background-size:contain;
   background-image: url("github.png"),linear-gradient(150deg, #e21e2b 35%, #f26e6b 100%); 
   background-repeat:no-repeat;
-  background-position: center;
+  background-position: right;
   
   }
 .cards-github:hover{
   cursor: pointer;
   filter: brightness(120%);
+  font-size: 1.4em;
 }
 .cards-other:hover{
   cursor: pointer;
   filter: brightness(128%);
+  font-size: 1.4em;
   
   
 }
@@ -282,6 +301,7 @@ box-shadow: 0px 5px 10px 3px rgba(0,0,0,0.32);
   @media (min-width: 600px) {
     .cards { grid-template-columns: repeat(2, 1fr); }
     .CardLimiter{margin-top: 10vh;}
+    
   }
   
   
@@ -295,6 +315,10 @@ box-shadow: 0px 5px 10px 3px rgba(0,0,0,0.32);
       max-width: 600px;
       align-self: center;
     }
+    body.inProject{
+      background: linear-gradient(90deg, rgba(213,202,189,1) 50%,var(--backgroundColour) 50%);
+    
+    }
 
   }
 
@@ -304,6 +328,7 @@ box-shadow: 0px 5px 10px 3px rgba(0,0,0,0.32);
          .cards { grid-template-columns: repeat(2, 1fr); }
          .CardLimiter{margin-top: 10vh;}
     }
+    
   }
   
 
@@ -313,6 +338,10 @@ box-shadow: 0px 5px 10px 3px rgba(0,0,0,0.32);
       .ContentCards{grid-template-columns: repeat(1, 1fr);
       max-width: 800vw;}
       .CardLimiter{margin-top: 10vh;}
+      body.inProject{
+        background: linear-gradient(90deg, rgba(213,202,189,1) 50%,var(--backgroundColour) 50%);
+      
+      }
  }
   }
 
