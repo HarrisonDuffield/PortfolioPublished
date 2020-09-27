@@ -3,7 +3,7 @@ document.getElementById("CurrentWebAddress").innerHTML = window.location.hostnam
 
 var cards = $(".card");
 console.log(cards.length)
-WelcomeText();
+
 var WelcomeTracker = 0;
 /* for(var i = 0; i <= cards.length; i++){
     var target = Math.floor(Math.random() * cards.length -1) + 1;
