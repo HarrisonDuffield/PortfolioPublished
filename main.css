@@ -332,6 +332,10 @@ header h3{
       background: linear-gradient(90deg, rgba(213,202,189,1) 50%,var(--backgroundColour) 50%);
     
     }
+    body.inProjectAlternative{
+      background: linear-gradient(90deg,var(--backgroundColour) 50%, rgba(213,202,189,1) 50%);
+    
+    }
     .sticky+.ContentCards{
       padding-top: 13.5vh;
       padding-bottom: 30vh;
@@ -358,6 +362,10 @@ header h3{
       .CardLimiter{margin-top: 10vh;}
       body.inProject{
         background: linear-gradient(90deg, rgba(213,202,189,1) 50%,var(--backgroundColour) 50%);
+      
+      }
+      body.inProjectAlternative{
+        background: linear-gradient(90deg,var(--backgroundColour) 50%, rgba(213,202,189,1) 50%);
       
       }
       .sticky+.ContentCards{
