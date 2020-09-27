@@ -15,7 +15,7 @@ function GithubHandler(){
 
 }
 function ActiveDivReset(){
-    window.location.href='index.html';
+    window.location.href='/';
 }
 
 
