@@ -191,7 +191,7 @@ function ExapndActiveDiv(HeaderImage,HeaderTitleContent){//clicked on div exapnd
         document.getElementById("headerImage").style.display="none";
     }
     
-    document.getElementById("Header").innerHTML = HeaderTitleContent;
+    //document.getElementById("Header").innerHTML = HeaderTitleContent;
     
     var headerTitle = document.getElementById("HeaderDiv");
     var stickyTitle = headerTitle.offsetTop;
@@ -212,14 +212,14 @@ function ExapndActiveDiv(HeaderImage,HeaderTitleContent){//clicked on div exapnd
 }
 
 
-
+//shouldnt be used in this implementation
 function NonStandardExpandActiveDiv(HeaderTitleContent){//Same But for using the left div instead of right div i.e specialist content
     ClearMainDiv();
     document.getElementById("ExitCross").style.display="none";
     document.getElementById("BigDiv").style.display="block";
     document.getElementById("AlternateTextContent").style.display="";
     document.getElementById("headerImage").style.display="none";
-    document.getElementById("Header").innerHTML = HeaderTitleContent;
+    //document.getElementById("Header").innerHTML = HeaderTitleContent;
     
     var headerTitle = document.getElementById("HeaderDiv");
     var stickyTitle = headerTitle.offsetTop;
@@ -283,7 +283,7 @@ function AddButtonLink(Destination,innerHTMLName){
     document.getElementById("TextContent").appendChild(node);
 };
 
-
+//dont think neccessary in this implementation
 function ClearMainDiv(){
     document.getElementById("TextContent").innerHTML = "";
     document.getElementById("AlternateTextContent").innerHTML="";

@@ -24,5 +24,3 @@ function HideDivs(ElementToSave){//hide the non active div
         }
 }
 }
-
-window.onbeforeunload = function(){ ActiveDivReset();};
